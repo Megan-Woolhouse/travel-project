@@ -19,7 +19,8 @@ header {
   background-repeat: no-repeat;
   color: white;
   text-align: center;
-  padding: 200px 0;
+  padding: 150px 0;
+  margin-bottom: 30px;
 }
 
 header h1 {
@@ -55,6 +56,44 @@ header a {
   margin-top: 32px;
 }
 
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.grid-2-col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-col {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+main img {
+  max-width: 100%;
+  filter: brightness(80%);
+}
+
+main h3 {
+  font-weight: bold;
+  font-size: 16px;
+  opacity: 0.3;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
 footer {
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.8),
@@ -65,7 +104,6 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   color: white;
-  padding: 100px;
 }
 
 footer h3 {
@@ -75,7 +113,7 @@ footer h3 {
 
 footer p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   opacity: 0.7;
 }
 
@@ -90,24 +128,41 @@ footer li {
 footer a {
   color: white;
   opacity: 0.7;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  font-size: 12px;
 }
 
 @media (max-width: 960px) {
   header {
-    padding: 60px 0;
+    padding: 40px 0;
   }
   header h1 {
-    font-size: 48px;
+    font-size: 40px;
   }
   header h2 {
-    font-size: 20px;
+    font-size: 16px;
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid-2-col {
+    grid-template-columns: 1fr;
+  }
+  .grid-3-col {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    padding: 0 20px;
+  }
+  footer h3 {
+    font-size: 16px;
+  }
+  footer li {
+    font-size: 12px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+  .grid {
+    grid-gap: 20px;
   }
 }
