@@ -150,6 +150,11 @@ main h5 {
   text-decoration: none;
 }
 
+.instagram-embed {
+  margin-top: 30px;
+  max-width: 100%;
+}
+
 footer {
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.8),
@@ -200,14 +205,22 @@ footer a {
   header h3 {
     font-size: 12px;
   }
+  section {
+    padding: 20px;
+  }
+
   .grid-2-col {
     grid-template-columns: 1fr;
+  }
+  .grid-3-col {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
   }
   .grid-3-col-equal {
     grid-template-columns: 1fr;
   }
   footer {
-    padding: 0 20px;
+    padding: 0 0px;
   }
   footer h3 {
     font-size: 16px;
@@ -225,6 +238,6 @@ footer a {
     display: none;
   }
   .embed {
-    aspect-ratio: 16/9;
+    aspect-ratio: 21/9;
   }
 }
