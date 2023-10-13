@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  color: #272044;
 }
 
 .container {
@@ -7,9 +8,14 @@ body {
   margin: 0 auto;
 }
 
+.text-center {
+  text-align: center;
+}
+
 section {
-  max-width: 1000px;
   margin: 0 auto;
+  max-width: 100%;
+  padding: 100px;
 }
 
 header {
@@ -17,6 +23,7 @@ header {
     url(../images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   color: white;
   text-align: center;
   padding: 150px 0;
@@ -67,9 +74,11 @@ header a {
 
 .grid-3-col {
   grid-template-columns: 1fr 2fr 2fr;
+  padding: 30px 100px;
 }
 
-main img {
+.img-responsive {
+  display: block;
   max-width: 100%;
   filter: brightness(80%);
 }
@@ -92,6 +101,44 @@ main p {
   font-weight: 400;
   font-size: 16px;
   opacity: 0.7;
+}
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.cafe {
+  background-color: #f8f8f8;
+}
+
+.grid-3-col-equal {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background-color: white;
+}
+
+.card-body {
+  padding: 32px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 3px;
+  padding: 16px;
+  background-color: #462cb2;
+  text-decoration: none;
 }
 
 footer {
