@@ -124,6 +124,7 @@ main h5 {
 
 .card {
   background-color: white;
+  margin-top: 30px;
 }
 
 .card-head.grid {
